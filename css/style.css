@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#HeaderWrapper {
+    background-color: red;
+    display: grid;
+    height: 50px;
+    width: 100%;
+    grid-template-columns: 3fr 12fr 2fr 3fr;
+    grid-template-areas: 
+    "hea nav inp img";
+}
+
+#HeaderWrapper > header {
+    background-color: aquamarine;
+    grid-area: hea;
+
+    height: auto;
+    width: auto;
+}
+
+#HeaderWrapper > nav {
+    background-color: antiquewhite;
+    grid-area: nav;
+
+    
+    height: auto;
+    width: auto;
+}
+
+#HeaderWrapper > input {
+    background-color: aqua;
+    grid-area: inp;
+    
+    height: auto;
+    width: auto;
+}
+
+#HeaderWrapper > img {
+    background-color: green;
+    grid-area: img;
+
+    height: auto;
+    width: auto;
+}
