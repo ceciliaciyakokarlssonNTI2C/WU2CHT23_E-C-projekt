@@ -11,7 +11,7 @@
     width: 100%;
     grid-template-columns: 3fr 12fr 2fr 3fr;
     grid-template-areas: 
-    "hea nav inp img";
+    "hea nav nav inp img";
 }
 
 #HeaderWrapper > header {
@@ -25,8 +25,6 @@
 #HeaderWrapper > nav {
     background-color: antiquewhite;
     grid-area: nav;
-
-    
     height: auto;
     width: auto;
 }
@@ -34,7 +32,6 @@
 #HeaderWrapper > input {
     background-color: aqua;
     grid-area: inp;
-    
     height: auto;
     width: auto;
 }
@@ -42,7 +39,6 @@
 #HeaderWrapper > img {
     background-color: green;
     grid-area: img;
-
-    height: auto;
+    height: 50px;
     width: auto;
 }
