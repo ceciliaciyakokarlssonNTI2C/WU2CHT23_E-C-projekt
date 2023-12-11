@@ -1,11 +1,15 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter';
 }
 
 #HeaderWrapper {
-    background-color: red;
+    background-color:#c0392b;
     display: grid;
     height: 50px;
     width: 100%;
@@ -14,31 +18,109 @@
     "hea nav nav inp img";
 }
 
+#HomeWrapper{
+    background-color:thistle;
+    display: grid;
+    height: 140vh;
+    width: 100%;
+    grid-template-rows: 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+     "se1 se1 se1"
+     "as0 se2 asi" ;
+}
+
+#HomeWrapper > #section1 {
+    overflow: hidden;
+    background-color: blueviolet;
+    grid-area: se1;
+}
+
+#Homewrapper > .Banderroll{
+    width: auto;
+    height: 100px;
+}
+
+#HomeWrapper > #section2{
+    background-color:#c0392b;
+    grid-area: se2;
+}
+
+#HomeWrapper > #aside0{
+    background-color: brown;
+    grid-area: as0;
+
+}
+
+#HomeWrapper > #aside1{
+    background-color: brown;
+    grid-area: asi;
+
+}
+
+
 #HeaderWrapper > header {
-    background-color: aquamarine;
+    background-color:#c0392b;
     grid-area: hea;
 
-    height: auto;
+    height: auto; 
     width: auto;
 }
 
+#logo {
+    height: 50px;
+    width: 50px;
+}
+
 #HeaderWrapper > nav {
-    background-color: antiquewhite;
+    background-color:#c0392b;
     grid-area: nav;
     height: auto;
     width: auto;
 }
 
 #HeaderWrapper > input {
-    background-color: aqua;
+    background-color: white;
     grid-area: inp;
     height: auto;
     width: auto;
+    margin: 15px;
 }
 
 #HeaderWrapper > img {
-    background-color: green;
+    background-color:#c0392b;
     grid-area: img;
     height: 50px;
     width: auto;
 }
+
+
+ .HideOverflowCenter{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HideOverflowCenter > img{
+    width: 100%;
+    height: auto;
+}
+
+#link_list{ 
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+}
+
+a{
+    font-size: 20px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Inter';
+}
+
