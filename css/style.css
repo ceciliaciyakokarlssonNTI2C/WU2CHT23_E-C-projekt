@@ -49,14 +49,15 @@
 #HomeWrapper > #aside0{
     background-color: brown;
     grid-area: as0;
-
+    border: 25px solid #c0392b;
 }
 
 #HomeWrapper > #aside1{
     background-color: brown;
     grid-area: asi;
-
+    border: 25px solid #c0392b;
 }
+
 
 
 #HeaderWrapper > header {
@@ -122,5 +123,124 @@ a{
     color: black;
     text-decoration: none;
     font-family: 'Inter';
+}
+
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+
+#BuyWrapper{
+    background: linear-gradient(to bottom, #b23729, #c0392b);
+    width: 100%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: 4fr 2fr 4fr 5fr;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-areas: 
+    "a1 a1 a2 a3"
+    "a4 a5 a5 a3"
+    "a4 a5 a5 a6"
+    ;
+    gap: 50px;
+    padding: 50px;
+}
+
+#BuyWrapper #article1{
+    grid-area: a1;
+    background-color: beige;
+    border-radius: 8px;
+}
+#BuyWrapper #article2{
+    grid-area: a2;
+    background-color: beige;
+    border-radius: 8px;
+
+}
+#BuyWrapper #article3{
+    grid-area: a3;
+    background-color: beige;
+    border-radius: 8px;
+
+}
+#BuyWrapper #article4{
+    grid-area: a4;
+    background-color: beige;
+    border-radius: 8px;
+
+}
+#BuyWrapper #article5{
+    grid-area: a5;
+    background-color: beige;
+    border-radius: 8px;
+
+}
+#BuyWrapper #article6{
+    grid-area: a6;
+    background-color: beige;
+    border-radius: 8px;
+
+}
+
+#BuyWrapper article{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#BuyWrapper article img{
+    height: 100%;
+    width: 100%;
+}
+
+#BuyWrapper article div{
+    width: 100%;
+    padding: 5px;
+    background-color: beige;
+}
+
+
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+/* ------------------------------------------------------- */
+
+#ArtistWrapper {
+    display: flex;
+    justify-content: space-evenly;  
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #b23729, #c0392b);
+}
+
+#ArtistWrapper article {
+    height: 33vh;
+    width: 75%;
+    margin: 25px;
+    display: flex;
+    gap: 10px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#ArtistWrapper article img{
+    height: 100%;
+    width: auto;
+}
+
+#Article1 {
+    background-color: bisque;
+
+}
+
+#Article2 {
+    background-color: bisque;
+
+}
+
+#Article3 {
+    background-color: bisque;
+
 }
 
